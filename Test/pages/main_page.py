@@ -10,5 +10,5 @@ class MainPage(BasePage):
         self.click(*self.ADD_TO_CART_BUTTON)
 
     def get_product_price(self):
-        price_text = self.get_text(*self.PRODUCT_PRICE).replace('₽/шт', '').replace(' ', '')  # Удаляем символ ₽ и пробелы
+        price_text = self.get_text(*self.PRODUCT_PRICE).replace('₽/шт', '').replace(' ', '')
         return float(price_text)

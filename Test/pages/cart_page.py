@@ -12,6 +12,6 @@ class CartPage(BasePage):
 
     def get_total_price(self):
         time.sleep(2)
-        price_text = self.get_text(*self.TOTAL_PRICE).replace('₽', '').replace(' ', '')  # Удаляем символ ₽ и пробелы
+        price_text = self.get_text(*self.TOTAL_PRICE).replace('₽', '').replace(' ', '')
         return float(price_text)
 
