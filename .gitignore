@@ -1,0 +1,7 @@
+# Our ignore
+.venv
+.idea
+.env
+report
+.pytest_cache
+__pycache__
